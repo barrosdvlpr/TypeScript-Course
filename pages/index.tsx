@@ -1,8 +1,8 @@
+export const input = document.getElementById('input') as HTMLInputElement;
 
-export default function Home() {
-  return (
-    <div>
-      Hello World
-    </div>
-  )
-}
+input.autofocus = true
+
+input.addEventListener('input', event => {
+  const i = event.currentTarget as HTMLInputElement
+  console.log(i.value)
+})
