@@ -1,10 +1,8 @@
+import _ from "lodash";
+import $ from "jquery";
 
-type Salutation = {greeting:string, name:string}
+console.log(_.uniq([1,1,2]))
 
-export default function greet({greeting, name}:Salutation):string {
-  return `${greeting}, ${name}!`
-} 
+$().add
+_.camelCase()
 
-const message:string = greet({greeting:"Hello", name:"John"})
-
-console.log(message)
